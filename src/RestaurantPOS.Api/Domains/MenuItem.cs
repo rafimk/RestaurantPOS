@@ -1,4 +1,6 @@
-﻿namespace RestaurantPOS.Api.Domains;
+﻿using RestaurantPOS.Api.Domains.Constants;
+
+namespace RestaurantPOS.Api.Domains;
 
 public class MenuItem
 {
@@ -6,5 +8,10 @@ public class MenuItem
     public string Name { get; set; } = string.Empty;
     public string Description { get; set; } = string.Empty;
     public decimal Price { get; set; }
-    public List<RecipeItem>? Ingredients { get; set; } // List of ingredients in the recipe
+    public decimal Quantity { get; set; }
+    public ServingType ServingType { get; set; }
+    public Guid MenuId { get; set; }
+    public Menu Menu { get; set; } = new Menu();
+    public List<RecipeItem>? Recipes { get; set; }
+    public List<SoldMenuItem> SoldItems { get; set; } = new List<SoldMenuItem>();
 }
