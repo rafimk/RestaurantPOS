@@ -4,7 +4,7 @@ namespace RestaurantPOS.Api.Domains;
 
 public class MenuItem
 {
-    public Guid MenuItemId { get; set; }
+    public Guid Id { get; set; }
     public string Name { get; set; } = string.Empty;
     public string Description { get; set; } = string.Empty;
     public decimal Price { get; set; }

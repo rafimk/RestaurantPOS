@@ -4,7 +4,9 @@ namespace RestaurantPOS.Api.Domains;
 
 public class DailySales
 {
-    public Guid DailySalesId { get; set; }
+    public Guid Id { get; set; }
+    public Guid BranchId { get; set;}
+    public Branch Branch { get; set;} = new();
     public DateTime Date { get; set; }
     public int BillNo { get; set; }
     public SalesType Type { get; set; }

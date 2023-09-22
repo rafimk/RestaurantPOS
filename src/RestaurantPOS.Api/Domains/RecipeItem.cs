@@ -4,7 +4,7 @@ namespace RestaurantPOS.Api.Domains;
 
 public class RecipeItem
 {
-    public Guid RecipeItemId { get; set; }
+    public Guid Id { get; set; }
     public Guid IngredientId { get; set; }
     public Ingredient Ingredient { get; set; } = new();
     public decimal Quantity { get; set; }

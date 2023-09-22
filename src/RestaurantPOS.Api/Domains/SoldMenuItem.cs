@@ -2,7 +2,7 @@
 
 public class SoldMenuItem
 {
-    public Guid SoldMenuItemId { get; set; }
+    public Guid Id { get; set; }
     public Guid DailySalesId { get; set; }
     public DailySales DailySales { get; set; } = new DailySales();
     public Guid MenuItemId { get; set; }

@@ -8,7 +8,7 @@ public class DailySalesConfiguration : IEntityTypeConfiguration<DailySales>
 {
     public void Configure(EntityTypeBuilder<DailySales> builder)
     {
-        builder.HasKey(ds => ds.DailySalesId);
+        builder.HasKey(x => x.Id);
         builder.Property(ds => ds.Date).IsRequired();
 
         // Configure the one-to-many relationship between DailySales and SoldMenuItem
